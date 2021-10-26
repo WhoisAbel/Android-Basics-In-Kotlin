@@ -1,5 +1,9 @@
 package whoisabel.com.androidbasicsinkotlin
 
+import whoisabel.com.androidbasicsinkotlin.unit2.pathWay1.RoundHut
+import whoisabel.com.androidbasicsinkotlin.unit2.pathWay1.RoundTower
+import whoisabel.com.androidbasicsinkotlin.unit2.pathWay1.SquareCabin
+
 /*
 - https://developer.android.com/training/kotlinplayground is an interactive
   code editor on the web where you can practice writing Kotlin programs.
@@ -46,15 +50,48 @@ fun main() {
 
 // CodeLab 2:
 fun main() {
-    val age = 24
+
+    val squareCabin = SquareCabin(6, 50.0)
+
+    with(squareCabin) {
+        println("\nSquare Cabin\n============")
+        println("Capacity: $capacity")
+        println("Material: $buildingMaterial")
+        println("Has room? ${hasRoom()}")
+        println("Floor area: ${floorArea()}")
+    }
+
+    val roundHut = RoundHut(3, 10.0)
+    with(roundHut) {
+        println("\nRound Hut\n=========")
+        println("Material: $buildingMaterial")
+        println("Capacity: $capacity")
+        println("Has room? ${hasRoom()}")
+        println("Floor area: ${floorArea()}")
+    }
+
+    val roundTower = RoundTower(4, radius = 15.5)
+
+    with(roundTower) {
+        println("\nRound Tower\n==========")
+        println("Material: $buildingMaterial")
+        println("Capacity: $capacity")
+        println("Has room? ${hasRoom()}")
+        println("Floor area: ${floorArea()}")
+        println("Carpet size: ${calculateMaxCarpetSize()}")
+
+    }
+
+
+    /*val age = 24
     val layers = 5
     printCakeCandles(age)
     printCakeTop(age)
-    printCakeBottom(age, layers)
+    printCakeBottom(age, layers)*/
 }
 
 fun printCakeCandles(age: Int) {
-    print (" ")
+    print(" ")
     repeat(age) {
         print(",")
     }
