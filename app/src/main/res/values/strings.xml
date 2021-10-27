@@ -9,5 +9,13 @@
     <string name="lemon_drink">Click to drink your lemonade!</string>
     <string name="lemon_empty_glass">Click to start again!</string>
     <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
+    <string name="hint_cost_of_service">Cost of Service</string>
+    <string name="label_service_question">How was the service?</string>
+    <string name="label_amazing">Amazing (20%)</string>
+    <string name="label_good">Good (18%)</string>
+    <string name="label_okay">Okay (15%)</string>
+    <string name="label_round_up_switch">Round up tip?</string>
+    <string name="label_calculate">Calculate</string>
+    <string name="lebel_result">Tip Amount</string>
 
 </resources>
