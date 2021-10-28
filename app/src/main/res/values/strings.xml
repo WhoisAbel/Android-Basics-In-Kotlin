@@ -16,6 +16,8 @@
     <string name="label_okay">Okay (15%)</string>
     <string name="label_round_up_switch">Round up tip?</string>
     <string name="label_calculate">Calculate</string>
-    <string name="lebel_result">Tip Amount</string>
+    <string name="label_result">Tip Amount</string>
+    <string name="tip_amount">Tip Amount: %s</string>
+
 
 </resources>
