@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasicsInKotlin">
         <activity
-            android:name=".unit2.tipTime.TipTimeActivity"
+            android:name=".unit1.exam.LemonadeActivity"
             android:exported="false" />
         <activity
             android:name=".unit1.pathWay4.RollDiceActivity"
@@ -19,7 +19,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".unit1.exam.LemonadeActivity"
+            android:name=".unit2.tipTime.TipTimeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
