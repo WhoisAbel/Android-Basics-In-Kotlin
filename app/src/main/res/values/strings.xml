@@ -18,6 +18,7 @@
     <string name="label_calculate">Calculate</string>
     <string name="label_result">Tip Amount</string>
     <string name="tip_amount">Tip Amount: %s</string>
+    <string name="label_cost_of_service">Cost of service</string>
 
 
 </resources>
