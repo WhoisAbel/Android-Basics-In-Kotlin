@@ -24,4 +24,7 @@
     <dimen name="spacing_19x">76dp</dimen>
     <dimen name="spacing_20x">80dp</dimen>
 
+    <dimen name="button_width">250dp</dimen>
+
+
 </resources>
