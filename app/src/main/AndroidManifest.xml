@@ -11,13 +11,29 @@
         android:theme="@style/Theme.AndroidBasicsInKotlin">
         <activity
             android:name=".unit2.dogglers.ui.VerticalListActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".unit2.dogglers.ui.HorizontalListActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
         <activity
             android:name=".unit2.dogglers.ui.GridListActivity"
-            android:exported="false" />
+            android:exported="false">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
         <activity
             android:name=".unit2.affirmations.AffirmationsActivity"
             android:exported="false" />
