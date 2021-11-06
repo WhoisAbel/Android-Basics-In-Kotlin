@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/label_exit"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_adb"
+        android:icon="@drawable/ic_adb"
+        android:title="@string/label_adb"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_add"
+        android:icon="@drawable/ic_add"
+        android:title="@string/label_add"
+        app:showAsAction="always"/>
+
+</menu>
