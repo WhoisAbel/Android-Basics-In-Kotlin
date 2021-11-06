@@ -37,6 +37,12 @@
     <string name="vertical">Vertical</string>
     <string name="horizontal">Horizontal</string>
     <string name="grid">Grid</string>
+    <string name="label_actionbar">ActionBar</string>
+    <string name="label_toolbar">Toolbar</string>
+    <string name="label_appbar">AppBar</string>
+    <string name="label_exit">Exit</string>
+    <string name="label_adb">ADB</string>
+    <string name="label_add">Add</string>
 
 
 </resources>
