@@ -10,11 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasicsInKotlin">
         <activity
+            android:name=".extra.ParentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".unit3.words.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".extra.ActionBarActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".extra.ParentActivity"/>
+                android:value=".extra.ParentActivity" />
         </activity>
         <activity
             android:name=".extra.ToolbarActivity"
@@ -59,7 +65,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".extra.ParentActivity"
+            android:name=".unit3.words.LetterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
