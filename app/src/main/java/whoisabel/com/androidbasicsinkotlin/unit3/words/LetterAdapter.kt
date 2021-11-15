@@ -1,6 +1,5 @@
 package whoisabel.com.androidbasicsinkotlin.unit3.words
 
-import android.content.Intent
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -8,9 +7,9 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.annotation.RequiresApi
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import whoisabel.com.androidbasicsinkotlin.R
-import whoisabel.com.androidbasicsinkotlin.unit3.words.DetailActivity.Companion.LETTER
 
 
 /**
@@ -49,11 +48,17 @@ class LetterAdapter : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
      */
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val item = list[position]
-        holder.button.text = item.toString()
+        val letter = item.toString()
+        holder.button.text = letter
         holder.button.setOnClickListener {
-            val intent = Intent(holder.view.context, DetailActivity::class.java)
-            intent.putExtra(LETTER, holder.button.text.toString())
-            holder.view.context.startActivity(intent)
+            //val intent = Intent(holder.view.context, DetailActivity::class.java)
+            /*  intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
+              holder.view.context.startActivity(intent)*/
+
+            holder.view.findNavController().navigate(
+                LetterListFragmentDirections
+                    .actionLetterListFragmentToWordListFragment(letter)
+            )
         }
     }
 
